@@ -24,10 +24,30 @@
 
 <body>
 
-  <nav class="navbar navbar-light bg-light static-top">
+  <nav id="navbar-top" class="navbar sticky-top navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#">UK Crop Diversity: Bioinformatics HPC Resource</a>
-      <!-- <a class="btn btn-primary" href="#">Sign In</a> -->
+      <ul class="nav">
+        <li class="list-inline-item nav-item">
+          <a href="#about">About</a>
+        </li>
+        <li class="list-inline-item nav-item">&sdot;</li>
+        <li class="list-inline-item nav-item">
+          <a href="#system">System Info</a>
+        </li>
+        <li class="list-inline-item nav-item">&sdot;</li>
+        <li class="list-inline-item nav-item">
+          <a href="#partners">Partner Organisations</a>
+        </li>
+        <li class="list-inline-item nav-item">&sdot;</li>
+        <li class="list-inline-item nav-item">
+          <a href="#funding">Funding</a>
+        </li>
+        <li class="list-inline-item nav-item">&sdot;</li>
+        <li class="list-inline-item nav-item">
+          <a href="https://help.cropdiversity.ac.uk">Help</a>
+        </li>
+      </ul>
     </div>
   </nav>
 
@@ -39,236 +59,161 @@
         <div class="col-xl-9 mx-auto">
           <h1 class="mb-5">UK Crop Diversity</h1><h2 class="mb-5">Bioinformatics HPC Resource</h2>
         </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form>
-            <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-              </div>
-              <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-              </div>
-            </div>
-          </form>
-        </div>
+        
       </div>
     </div>
   </header>
 
-  <section class="about text-center">
-    <div class="container">
-      <h2 class="mb-5">About</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat eleifend est id varius. Suspendisse euismod, sem sit amet ullamcorper dictum, lacus nisl efficitur sem, vitae scelerisque leo augue eget dui. Nullam auctor diam aliquam, tristique nunc sed, venenatis risus. Phasellus et sapien hendrerit, ultrices arcu vitae, efficitur lorem. Donec sapien sem, placerat in lorem non, fermentum bibendum enim. Donec id iaculis ligula. Nunc non turpis faucibus, laoreet enim non, lobortis turpis. Donec rutrum dignissim pellentesque. Nullam nec urna et tortor laoreet vestibulum ultricies a urna. Duis quis aliquet felis. Aliquam eros ex, sollicitudin at augue sed, elementum egestas est. Vivamus sed tincidunt arcu, et tempus nisi.</p>
-      <p>Vestibulum viverra laoreet nibh a blandit. Morbi eget dapibus arcu, nec egestas magna. Suspendisse consequat nisl quis malesuada iaculis. Praesent pellentesque ex vel vestibulum aliquet. Vivamus laoreet dui imperdiet efficitur vestibulum. Donec eget sem interdum ante fermentum lacinia. Praesent consectetur commodo dolor, et luctus mauris feugiat at. Proin quis tellus tempor, varius diam sit amet, mollis ante. In posuere ipsum ut ipsum feugiat scelerisque. Nunc vitae massa id mauris volutpat consequat.</p>
-    </div>
-  </section>
+  <div data-spy="scroll" data-targer="#navbar-top" data-offset="50">
 
-  <!-- Icons Grid -->
-  <section class="features-icons bg-light text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="fa fa-fw fa-microchip m-auto text-primary"></i>
-            </div>
-            <h3>CPUs</h3>
-            <p class="lead mb-0">3,500 CPU cores</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="fa fa-fw fa-memory m-auto text-primary"></i>
-            </div>
-            <h3>Memory</h3>
-            <p class="lead mb-0">15 TB of memory</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="fa fa-fw fa-hdd m-auto text-primary"></i>
-            </div>
-            <h3>Storage</h3>
-            <p class="lead mb-0">1.5 PB of capacity</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Image Showcases -->
-  <section class="showcase">
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
-
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/cpu.jpg');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>CPUs</h2>
-          <p class="lead mb-0">Fifty-five physical compute nodes offer access to 112 Intel CPUs providing 1,764 compute cores
-            (3,528 threads) in total, broken down as 100 2nd-Gen Xeon Scalable (Cascade Lake; 2019) processors,
-            six 1st-Gen Xeon Scalable (Skylake; 2019) processors and six Xeon E5-v4 (Broadwell; 2017) processors. 
-          </p>
-        </div>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/ram.jpg');"></div>
-        <div class="col-lg-6 my-auto showcase-text">
-          <h2>Memory</h2>
-          <p class="lead mb-0">The cluster has 15,296 GB of available DDR4 memory. Two large memory machines
-            provide 1.5 TB and 3.0 TB, alongside forty-eight nodes with 192 GB of memory, two nodes with 256 GB of memory,
-			and two nodes with 384 GB of memory.</p>
-        </div>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/hdd.jpg');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Storage</h2>
-          <p class="lead mb-0">An eight-node BeeGFS parallel storage system (running over a 25-gigabit network
-            backbone) provides access to 1.5 petabytes of storage. This is complemented by a addtional petabyte of backup
-            capacity.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--
-  <section class="testimonials text-center bg-light">
-    <div class="container">
-      <h2 class="mb-5">What people are saying...</h2>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
-            <h5>Margaret E.</h5>
-            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
-            <h5>Fred S.</h5>
-            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-            <h5>Sarah W.</h5>
-            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <section class="partners text-center">
-    <div class="container">
-      <h2 class="mb-5">Partner Organizations</h2>
+    <section id="about" class="about text-center">
       <div class="container">
-          <p>This resource is available to researchers (and select collaborators) from any of the following UK research institutes:</p>
-        </div>
-      <div class="row">
-        <div class="col-lg-4 d-flex justify-content-center">
-            <img src="img/institutions/niab.png" class="p-4"/>
-        </div>
-        <div class="col-lg-4 d-flex justify-content-center">
-          <img src="img/institutions/jhi.svg" class="p-4"/>
-        </div>        
-        <div class="col-lg-4 d-flex justify-content-center">
-          <img src="img/institutions/sruc.svg" class="p-4"/>
-        </div>
-        <div class="col-lg-4 d-flex justify-content-center">
-          <img src="img/institutions/rbge.svg" class="p-4"/>
-        </div>
-        <div class="col-lg-4 d-flex justify-content-center">
-          <img src="img/institutions/kew.svg" class="p-4"/>
-        </div>
-        <div class="col-lg-4 d-flex justify-content-center">
-          <img src="img/institutions/nhm.svg" class="p-4"/>
-        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat eleifend est id varius. Suspendisse euismod, sem sit amet ullamcorper dictum, lacus nisl efficitur sem, vitae scelerisque leo augue eget dui. Nullam auctor diam aliquam, tristique nunc sed, venenatis risus. Phasellus et sapien hendrerit, ultrices arcu vitae, efficitur lorem. Donec sapien sem, placerat in lorem non, fermentum bibendum enim. Donec id iaculis ligula. Nunc non turpis faucibus, laoreet enim non, lobortis turpis. Donec rutrum dignissim pellentesque. Nullam nec urna et tortor laoreet vestibulum ultricies a urna. Duis quis aliquet felis. Aliquam eros ex, sollicitudin at augue sed, elementum egestas est. Vivamus sed tincidunt arcu, et tempus nisi.</p>
+        <p>Vestibulum viverra laoreet nibh a blandit. Morbi eget dapibus arcu, nec egestas magna. Suspendisse consequat nisl quis malesuada iaculis. Praesent pellentesque ex vel vestibulum aliquet. Vivamus laoreet dui imperdiet efficitur vestibulum. Donec eget sem interdum ante fermentum lacinia. Praesent consectetur commodo dolor, et luctus mauris feugiat at. Proin quis tellus tempor, varius diam sit amet, mollis ante. In posuere ipsum ut ipsum feugiat scelerisque. Nunc vitae massa id mauris volutpat consequat.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="funders text-center bg-light">
-    <div class="container">
-      <h2 class="mb-5">Funding</h2>
+    <!-- Icons Grid -->
+    <section id="system" class="features-icons bg-light text-center">
       <div class="container">
-          <p>The bulk of funding for this HPC resource was awarded as part of a BBSRC 18ALERT grant (BB/S019669/1)
-            but all of the entities listed below have contributed in some way to either the purchase of hardware,
-            software, or assistance with running and/or staff costs.</p>
-        </div>
-      <div class="row">
-        <div class="col-lg-6 d-flex justify-content-center">
-          <img src="img/funders/bbsrc.svg" class="p-4"/>
-        </div>
-        <div class="col-lg-6 d-flex justify-content-center">
-          <img src="img/funders/scottish-government.svg" class="p-4"/>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fa fa-fw fa-microchip m-auto text-primary"></i>
+              </div>
+              <h3>CPUs</h3>
+              <p class="lead mb-0">3,500 CPU cores</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fa fa-fw fa-memory m-auto text-primary"></i>
+              </div>
+              <h3>Memory</h3>
+              <p class="lead mb-0">15 TB of memory</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fa fa-fw fa-hdd m-auto text-primary"></i>
+              </div>
+              <h3>Storage</h3>
+              <p class="lead mb-0">1.5 PB of capacity</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Call to Action -->
-  <section class="call-to-action text-white text-center">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h2 class="mb-4">Need help?</h2>
+    <!-- Image Showcases -->
+    <section class="showcase">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/cpu.jpg');"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>CPUs</h2>
+            <p class="lead mb-0">Fifty-five physical compute nodes offer access to 112 Intel CPUs providing 1,764 compute cores
+              (3,528 threads) in total, broken down as 100 2nd-Gen Xeon Scalable (Cascade Lake; 2019) processors,
+              six 1st-Gen Xeon Scalable (Skylake; 2019) processors and six Xeon E5-v4 (Broadwell; 2017) processors. 
+            </p>
+          </div>
         </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <button class="btn btn-block btn-lg btn-primary">Click here</button>
+        <div class="row no-gutters">
+          <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/ram.jpg');"></div>
+          <div class="col-lg-6 my-auto showcase-text">
+            <h2>Memory</h2>
+            <p class="lead mb-0">The cluster has 15,296 GB of available DDR4 memory. Two large memory machines
+              provide 1.5 TB and 3.0 TB, alongside forty-eight nodes with 192 GB of memory, two nodes with 256 GB of memory,
+  			and two nodes with 384 GB of memory.</p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/hdd.jpg');"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Storage</h2>
+            <p class="lead mb-0">An eight-node BeeGFS parallel storage system (running over a 25-gigabit network
+              backbone) provides access to 1.5 petabytes of storage. This is complemented by a addtional petabyte of backup
+              capacity.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+
+    <section id="partners" class="partners text-center">
+      <div class="container">
+        <h2 class="mb-5">Partner Organisations</h2>
+        <div class="container">
+            <p>This resource is available to researchers (and select collaborators) from any of the following UK research institutes:</p>
+          </div>
+        <div class="row">
+          <div class="col-lg-4 d-flex justify-content-center">
+              <img src="img/institutions/niab.png" class="p-4"/>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-center">
+            <img src="img/institutions/jhi.svg" class="p-4"/>
+          </div>        
+          <div class="col-lg-4 d-flex justify-content-center">
+            <img src="img/institutions/sruc.svg" class="p-4"/>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-center">
+            <img src="img/institutions/rbge.svg" class="p-4"/>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-center">
+            <img src="img/institutions/kew.svg" class="p-4"/>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-center">
+            <img src="img/institutions/nhm.svg" class="p-4"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="funding" class="funders text-center bg-light">
+      <div class="container">
+        <h2 class="mb-5">Funding</h2>
+        <div class="container">
+            <p>The bulk of funding for this HPC resource was awarded as part of a BBSRC 18ALERT grant (BB/S019669/1)
+              but all of the entities listed below have contributed in some way to either the purchase of hardware,
+              software, or assistance with running and/or staff costs.</p>
+          </div>
+        <div class="row">
+          <div class="col-lg-6 d-flex justify-content-center">
+            <img src="img/funders/bbsrc.svg" class="p-4"/>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center">
+            <img src="img/funders/scottish-government.svg" class="p-4"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="call-to-action text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <form action="http://help.cropdiversity.ac.uk">
+              <button class="btn btn-block btn-lg btn-primary">Click here for Help and Documentation</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <!-- Footer -->
   <footer class="footer bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-          <ul class="list-inline mb-2">
-            <li class="list-inline-item">
-              <a href="#">About</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Contact</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-          </ul>
           <p class="text-muted small mb-4 mb-lg-0">&copy; <script>document.write(new Date().getFullYear())</script> Information &amp; Computational Sciences, The James Hutton Institute</p>
-        </div>
-        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-facebook fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-instagram fa-2x fa-fw"></i>
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
